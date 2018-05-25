@@ -1,0 +1,31 @@
+<h2>{{ad_name}}</h2>
+<ul>
+    {{#flength data.data}} {{#each this}} {{#if @index}}
+    <li class="two">
+        <a href="/page/detail.html?id={{fiction_id}}">
+            <b>0{{@index}}</b>
+            <span>{{title}}</span>
+            <font>{{authors}}</font>
+        </a>
+    </li>
+    {{else}}
+    <li class="one">
+        <a href="/page/detail.html?id={{fiction_id}}">
+            <dl>
+                <dt><img src="{{cover}}"><b>{{allow_free_read}}</b>{{#if finish}}<span>完结</span>{{else}}<span>连载中</span>{{/if}}</dt>
+                <dd>
+                    <h2>{{title}}</h2>
+                    <p>{{authors}}</p>
+                    <p>{{summary}}</p>
+                    <p>{{#each tags}}
+                        <span>{{this}}</span>{{/each}}
+                    </p>
+                </dd>
+            </dl>
+        </a>
+    </li>
+    {{/if}} {{/each}} {{/flength}}
+</ul>
+<div class="change">
+    <span>换一换</span><span>查看全部</span>
+</div>

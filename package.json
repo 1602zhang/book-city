@@ -1,0 +1,23 @@
+{
+    "name": "book",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "*",
+        "gulp-webserver": "*",
+        "gulp-sequence": "*",
+        "gulp-less": "*",
+        "gulp-babel": "*",
+        "babel-core": "*",
+        "babel-preset-es2015": "*",
+        "gulp-clean-css": "*",
+        "gulp-uglify": "*",
+        "gulp-htmlmin": "*"
+    }
+}

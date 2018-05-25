@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/search.css">
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <a href="">&lt;</a>
+            <div class="find">
+                <b></b>
+                <input type="text" placeholder="输入书名/作者、关键字" class="s_text">
+                <span class="s_btn">搜索</span>
+            </div>
+        </header>
+        <main class="content">
+            <ul></ul>
+            <div class="con_list"></div>
+        </main>
+    </div>
+    <script src="../js/lib/require.js"></script>
+    <script>
+        require(['../js/main'], function() {
+            require(['search']) //搜索入口文件
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<h2>{{ad_name}}</h2>
+<ul>
+    {{#each data.data}}
+    <li>
+        <a href="/page/detail.html?id={{fiction_id}}">
+            <img src="{{data.cover}}" alt="">
+            <span>{{data.title}}</span>
+        </a>
+    </li>
+    {{/each}}
+</ul>
+<div class="good">更多限免佳作>></div>

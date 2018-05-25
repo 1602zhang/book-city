@@ -1,0 +1,13 @@
+{{#if items.length}} {{#each items}}
+<a href="/page/detail.html?id={{fiction_id}}">
+    <dl>
+        <dt><img src="{{cover}}"></dt>
+        <dd>
+            <h2>{{title}}</h2>
+            <p>{{intro}}</p>
+        </dd>
+    </dl>
+</a>
+{{/each}} {{else}}
+<div>暂无数据</div>
+{{/if}}

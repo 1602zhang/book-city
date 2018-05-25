@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/read.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="book-read">
+        </div>
+        <div class="book-mask">
+            <header class="header">
+                <span>返回</span>
+                <span>…</span>
+            </header>
+            <footer class="footer">
+                <div class="f-top">
+                    <span class="prev">上一章</span>
+                    <span class="num"></span>
+                    <span class="next">下一章</span>
+                </div>
+                <div class="f_bottom">
+                    <ol class="font_back">
+                        <li class="size"><label for="">字号：</label><span class="big">大</span><span class="small">小</span></li>
+                        <li class="bg"><label for="">背景：</label><span></span><span></span><span></span><span></span><span></span><span></span></li>
+                    </ol>
+                    <ul>
+                        <li class="dialog">目录</li>
+                        <li class="font">字体</li>
+                        <li class="night">夜间</li>
+                        <li class="download">下载</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <div class="menu">
+            <header class="header">
+                <span class="back">返回</span>
+                <span>目录</span>
+            </header>
+            <main class="main">
+                <ul>
+
+                </ul>
+            </main>
+        </div>
+    </div>
+    <script src="../js/lib/require.js"></script>
+    <script>
+        require(['../js/main'], function() {
+            require(['read'])
+        })
+    </script>
+    <script>
+    </script>
+</body>
+
+</html>
